@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Julius Gunawan — Economics → AI Automation</title>
+  <meta name="description" content="Julius Gunawan — Economics professional (IPB) transitioning into AI Automation. Automating the boring, optimizing the important." />
+  <meta name="author" content="Julius Gunawan" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Julius Gunawan — Economics → AI Automation" />
+  <meta property="og:description" content="Career switcher from Economics to AI Automation. Building multi-agent systems, automation workflows, and AI tooling." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Fixed parallax background layers -->
+  <div class="bg-layer bg-grid" aria-hidden="true"></div>
+  <div class="bg-layer bg-glow bg-glow-1" aria-hidden="true"></div>
+  <div class="bg-layer bg-glow bg-glow-2" aria-hidden="true"></div>
+
+  <!-- Scroll progress bar -->
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <!-- Navigation -->
+  <header class="nav" id="nav">
+    <a href="#hero" class="nav-brand">JG<span class="nav-brand-dot">.</span></a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#transition">Transition</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="hero">
+      <div class="hero-inner">
+        <p class="hero-eyebrow reveal">Economics&nbsp;Background <span class="arrow">&rarr;</span> AI&nbsp;Automation</p>
+        <h1 class="hero-title reveal">Julius Gunawan</h1>
+        <p class="hero-tagline reveal">
+          <span class="accent">Automating</span> the Boring.
+          <span class="accent">Optimizing</span> the Important.
+        </p>
+        <p class="hero-sub reveal">
+          Economics professional (IPB) transitioning into <strong>AI&nbsp;Automation</strong> &mdash;
+          bridging domain knowledge in economics, public policy &amp; finance with
+          multi-agent systems and automation workflows.
+        </p>
+        <div class="hero-cta reveal">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+        </div>
+        <div class="hero-meta reveal">
+          <span class="meta-pill"><span class="dot"></span>Jakarta, Indonesia</span>
+          <span class="meta-pill">Open to AI Automation roles</span>
+        </div>
+      </div>
+      <a href="#about" class="scroll-hint" aria-label="Scroll down">
+        <span class="scroll-hint-text">Scroll</span>
+        <span class="scroll-hint-arrow"></span>
+      </a>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-index">01</span>
+          <h2 class="section-title">About</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>
+              I'm an Economics graduate from <strong>Institut Pertanian Bogor (IPB)</strong> with
+              cross-sector internship experience across <strong>BRI, the Ministry of Finance,
+              the Corruption Eradication Commission (KPK), and Bank Mandiri</strong>. That work
+              gave me a strong analytical foundation &mdash; reading data, evaluating programs,
+              and turning messy information into decisions.
+            </p>
+            <p>
+              Today I'm <strong>actively moving into AI &amp; automation</strong>. What started as
+              speeding up spreadsheet analysis has grown into building LLM agents, multi-agent
+              orchestration, and privacy-first automation pipelines. My edge isn't just the
+              tools &mdash; it's pairing them with real <strong>domain knowledge in economics,
+              public policy, and finance</strong>, a combination that's rare in pure engineering roles.
+            </p>
+          </div>
+          <ul class="about-stats reveal">
+            <li><span class="stat-num">83k+</span><span class="stat-label">villages analyzed at Kemenkeu</span></li>
+            <li><span class="stat-num">4</span><span class="stat-label">cross-sector internships</span></li>
+            <li><span class="stat-num">6+</span><span class="stat-label">AI / automation projects built</span></li>
+            <li><span class="stat-num">88</span><span class="stat-label">RevoU independent study score</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CAREER TRANSITION ============ -->
+    <section class="section section-alt" id="transition">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-index">02</span>
+          <h2 class="section-title">Career Transition</h2>
+        </div>
+        <div class="transition-grid">
+          <article class="transition-card reveal">
+            <div class="transition-icon">?</div>
+            <h3>Why AI?</h3>
+            <p>
+              At the Ministry of Finance I streamlined urban&ndash;rural data analysis across
+              <strong>83,000+ villages by 30%</strong> using Excel pivot tables. That was the spark:
+              if a pivot table saves that much time, what could real automation and AI agents do at scale?
+              AI is the natural next step from the analytical work I already love.
+            </p>
+          </article>
+          <article class="transition-card reveal">
+            <div class="transition-icon">&#9881;</div>
+            <h3>What I'm building now</h3>
+            <p>
+              Multi-agent systems, LLM orchestration with Claude &amp; local models (Ollama),
+              automation workflows in n8n, and a personal tooling layer that customizes AI-agent
+              behavior. I focus on <strong>reasoning and domain bridges</strong>, not just wiring tools together.
+            </p>
+          </article>
+          <article class="transition-card reveal">
+            <div class="transition-icon">&#10148;</div>
+            <h3>Where I'm headed</h3>
+            <p>
+              Targeting an <strong>AI Automation Specialist</strong> role &mdash; not overclaiming as an
+              ML engineer, but owning the space where <strong>domain knowledge meets automation</strong>:
+              translating real economic and operational problems into AI-driven workflows that
+              actually ship.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-index">03</span>
+          <h2 class="section-title">Experience</h2>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-top">
+                <h3>Culture Transformation &mdash; Intern</h3>
+                <span class="timeline-date">May 2024 &ndash; Jan 2025</span>
+              </div>
+              <p class="timeline-org">PT Bank Rakyat Indonesia (BRI) &middot; Jakarta</p>
+              <ul>
+                <li>Monitored Culture Agent Program funds distributed across <strong>18 Regional Offices</strong>.</li>
+                <li>Built an <strong>SOP / AD-ART community format for 28 communities</strong> &mdash; standardizing process at scale.</li>
+                <li>Managed logistics and the <strong>data of 160 winners</strong> at the BRI Excellence Awards.</li>
+              </ul>
+              <p class="timeline-bridge">Bridge to AI: process standardization &amp; structured data management &mdash; the human version of the workflows I now automate.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-top">
+                <h3>Village Fund Division &mdash; Intern</h3>
+                <span class="timeline-date">Mar 2024 &ndash; Apr 2024</span>
+              </div>
+              <p class="timeline-org">Ministry of Finance (Kementerian Keuangan RI) &middot; Jakarta</p>
+              <ul>
+                <li>Monitored &amp; evaluated the Village Fund program, analyzing data from <strong>83,000+ villages</strong>.</li>
+                <li>Streamlined comparative urban&ndash;rural analysis by <strong>30% using Excel pivot tables</strong>.</li>
+                <li>Joined the dissemination meeting with BRIN, Kemendes, and Kemendagri.</li>
+              </ul>
+              <p class="timeline-bridge">Bridge to AI: large-scale data analysis on a national dataset &mdash; the exact pain point that pushed me toward automation.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-top">
+                <h3>Future ME (Mandirian Excellence) &mdash; Program</h3>
+                <span class="timeline-date">Jan 2024 &ndash; Feb 2024</span>
+              </div>
+              <p class="timeline-org">PT Bank Mandiri &middot; Remote</p>
+              <ul>
+                <li>Completed all program modules with guidance from experienced Bank Mandiri professionals.</li>
+                <li>Attended sessions on leadership, communication, adaptability &amp; financial management.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-top">
+                <h3>Procurement &mdash; Intern</h3>
+                <span class="timeline-date">Sep 2023 &ndash; Dec 2023</span>
+              </div>
+              <p class="timeline-org">Corruption Eradication Commission (KPK) &middot; Jakarta</p>
+              <ul>
+                <li>Managed <strong>IDR 225M</strong> in goods &amp; services procurement with full compliance.</li>
+                <li>Organized <strong>200+ documents</strong>, boosting retrieval efficiency by <strong>40%</strong>.</li>
+              </ul>
+              <p class="timeline-bridge">Bridge to AI: compliance-grade rigor &amp; document workflows &mdash; later the inspiration for my certificate-distribution and document automation experiments.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-top">
+                <h3>Leadership &mdash; Purna Paskibraka Indonesia</h3>
+                <span class="timeline-date">2018 &ndash; 2023</span>
+              </div>
+              <p class="timeline-org">Pengurus Pusat PPI &middot; Jakarta</p>
+              <ul>
+                <li><strong>Coach (3 yrs):</strong> designed a 4-month training program for prospective Paskibraka members.</li>
+                <li><strong>Head of Logistics:</strong> coordinated all committee divisions &amp; prepared budget plans for citywide selection.</li>
+                <li>Flag Raiser on Independence Day &amp; Medal Ceremony Officer at the <strong>Asian Para Games 2018</strong>.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="section section-alt" id="projects">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-index">04</span>
+          <h2 class="section-title">Projects</h2>
+        </div>
+        <p class="section-lead reveal">
+          A focused selection of AI &amp; automation work. Sensitive or personal projects are shown
+          with <strong>architecture and dummy/redacted data only</strong> &mdash; no real positions,
+          credentials, or private figures.
+        </p>
+
+        <!-- Tier 1 -->
+        <h3 class="tier-label reveal"><span>Flagship</span> &mdash; most representative work</h3>
+        <div class="projects-grid">
+
+          <article class="project-card reveal">
+            <div class="project-head">
+              <span class="project-status status-dev">In Development</span>
+              <span class="project-tag">Multi-Agent</span>
+            </div>
+            <h4>Bitcoin Analysis Orchestrator</h4>
+            <p>
+              A multi-agent system with three specialized sub-agents &mdash; <strong>Chart, Macro,
+              and Geopolitical</strong> &mdash; feeding a weighted synthesis layer that produces a single
+              consolidated read, delivered to Telegram. Designed for explainable, layered reasoning
+              rather than a single black-box call.
+            </p>
+            <ul class="project-stack">
+              <li>Node.js</li><li>Multi-agent</li><li>Gemini API</li><li>Binance / CoinGecko</li><li>Telegram</li>
+            </ul>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-head">
+              <span class="project-status status-done">Completed</span>
+              <span class="project-tag">Privacy-First</span>
+            </div>
+            <h4>Ollama + n8n + Obsidian Pipeline</h4>
+            <p>
+              An automated meeting-summary pipeline that runs <strong>fully local &mdash; no cloud API</strong>.
+              Zoom recordings are transcribed and summarized by a local LLM (Ollama), orchestrated
+              with n8n, and written into Obsidian as structured notes. Automation without sending
+              private data to a third party.
+            </p>
+            <ul class="project-stack">
+              <li>Ollama</li><li>n8n</li><li>Obsidian</li><li>Local LLM</li>
+            </ul>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-head">
+              <span class="project-status status-active">In Use</span>
+              <span class="project-tag">AI Tooling</span>
+            </div>
+            <h4>Claude Code Skills &mdash; Personal Tooling Layer</h4>
+            <p>
+              A custom layer of skills that shapes how an AI coding agent behaves: <strong>context
+              metering, pre-execution risk review, loop detection, and tone rules</strong>. It's the
+              most "meta" project &mdash; proof I can customize agent behavior, not just use defaults.
+            </p>
+            <ul class="project-stack">
+              <li>Claude Code</li><li>Agent design</li><li>Prompt engineering</li>
+            </ul>
+          </article>
+        </div>
+
+        <!-- Tier 2 -->
+        <h3 class="tier-label reveal"><span>Applied</span> &mdash; shown with dummy / redacted data</h3>
+        <div class="projects-grid">
+
+          <article class="project-card reveal">
+            <div class="project-head">
+              <span class="project-status status-active">Active</span>
+              <span class="project-tag">FinTech / Domain Bridge</span>
+            </div>
+            <h4>CREST &mdash; Investment Decision Agent</h4>
+            <p>
+              A systematic scoring engine for investment decisions built on transparent indicators
+              &mdash; <strong>RSI, MA50/200, and relative returns vs. SPY</strong>. This is where my
+              economics background meets AI: turning market reasoning into an auditable decision
+              system. <em>Architecture only &mdash; no real positions or figures shown.</em>
+            </p>
+            <ul class="project-stack">
+              <li>Claude Code</li><li>Scoring engine</li><li>Multi-asset</li>
+            </ul>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-head">
+              <span class="project-status status-active">Active</span>
+              <span class="project-tag">React + Apps Script</span>
+            </div>
+            <h4>FinTrack ID &mdash; Finance Dashboard</h4>
+            <p>
+              A personal finance dashboard spanning 5 investment and 3 expense categories, backed by
+              <strong>~3,400 structured formulas</strong> with dedicated laptop &amp; mobile layouts.
+              A study in technical rigor and data modeling. <em>Demonstrated with dummy data only.</em>
+            </p>
+            <ul class="project-stack">
+              <li>React</li><li>Google Sheets</li><li>Apps Script</li>
+            </ul>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-head">
+              <span class="project-status status-demo">Demo / Sample</span>
+              <span class="project-tag">Dashboard</span>
+            </div>
+            <h4>PKS Monitoring Dashboard</h4>
+            <p>
+              A monitoring dashboard tracking <strong>~150 organizations across 10 progress stages</strong>,
+              with a pie chart, filterable table, edit modal, and Excel export. Built end-to-end as a
+              <strong>sample with fully fictional data</strong> to showcase the UI and data workflow.
+            </p>
+            <ul class="project-stack">
+              <li>React</li><li>localStorage</li><li>Charts</li><li>Excel export</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-index">05</span>
+          <h2 class="section-title">Skills</h2>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-group reveal skill-group-primary">
+            <h3>AI &amp; Automation</h3>
+            <ul>
+              <li>Artificial Intelligence</li>
+              <li>Workflow Optimization</li>
+              <li>Digital Transformation</li>
+              <li>LLM / Claude / Ollama</li>
+              <li>Multi-agent Systems</li>
+              <li>n8n Automation</li>
+            </ul>
+          </div>
+          <div class="skill-group reveal">
+            <h3>Data &amp; Analytical</h3>
+            <ul>
+              <li>Data Analysis</li>
+              <li>Data Cleaning &amp; Wrangling</li>
+              <li>Data Visualization</li>
+              <li>Excel (Pivot, Modeling)</li>
+              <li>Stata &amp; EViews</li>
+              <li>Problem Solving</li>
+            </ul>
+          </div>
+          <div class="skill-group reveal">
+            <h3>Professional &amp; Soft</h3>
+            <ul>
+              <li>Leadership</li>
+              <li>Public Speaking</li>
+              <li>Cross-team Collaboration</li>
+              <li>Adaptability</li>
+              <li>Teamwork</li>
+              <li>English (Professional)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EDUCATION + CERTIFICATIONS ============ -->
+    <section class="section section-alt" id="education">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-index">06</span>
+          <h2 class="section-title">Education &amp; Certifications</h2>
+        </div>
+        <div class="edu-layout">
+          <div class="edu-col">
+            <h3 class="edu-col-title reveal">Education</h3>
+            <div class="edu-list">
+              <div class="edu-item reveal">
+                <h4>Institut Pertanian Bogor (IPB)</h4>
+                <p class="edu-meta">Bachelor of Economics &middot; 2020 &ndash; 2024</p>
+                <p>Faculty of Economics &amp; Management. Active in the Faculty Student Executive Board (BEM FEM).</p>
+              </div>
+              <div class="edu-item reveal">
+                <h4>RevoU &mdash; Independent Study</h4>
+                <p class="edu-meta">Kampus Merdeka &middot; 2023 &middot; Score 88</p>
+                <p>Data Analytics, Digital Marketing, Software Engineering &amp; Product Management.</p>
+              </div>
+              <div class="edu-item reveal">
+                <h4>SMAN 1 Jakarta</h4>
+                <p class="edu-meta">Sciences &middot; 2017 &ndash; 2020</p>
+                <p>National &amp; international Pencak Silat champion (see Fun Facts).</p>
+              </div>
+            </div>
+          </div>
+          <div class="edu-col">
+            <h3 class="edu-col-title reveal">Certifications</h3>
+            <ul class="cert-list">
+              <li class="cert-featured reveal">
+                <span class="cert-badge">Featured</span>
+                <span class="cert-name">Claude 101</span>
+                <span class="cert-by">AI / LLM fundamentals</span>
+              </li>
+              <li class="reveal"><span class="cert-name">Independent Study</span><span class="cert-by">RevoU &middot; Kampus Merdeka</span></li>
+              <li class="reveal"><span class="cert-name">Internship Certificate</span><span class="cert-by">Ministry of Finance RI</span></li>
+              <li class="reveal"><span class="cert-name">Future Mandirian Excellence</span><span class="cert-by">Bank Mandiri</span></li>
+              <li class="reveal"><span class="cert-name">Internship Certificate</span><span class="cert-by">KPK</span></li>
+              <li class="reveal"><span class="cert-name">Anti-Corruption &amp; Integrity (PADI)</span><span class="cert-by">KPK</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FUN FACTS ============ -->
+    <section class="section" id="funfacts">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-index">07</span>
+          <h2 class="section-title">Fun Facts</h2>
+        </div>
+        <div class="fun-grid">
+          <div class="fun-card reveal">
+            <span class="fun-emoji">&#129354;</span>
+            <p><strong>Pencak Silat champion</strong> &mdash; 1st place, Jakarta Selatan Open Challenge 2019 &amp; ASAD Championship 2018.</p>
+          </div>
+          <div class="fun-card reveal">
+            <span class="fun-emoji">&#127881;</span>
+            <p><strong>Flag Raiser (Paskibraka)</strong> at the Independence Day ceremony &mdash; discipline under pressure.</p>
+          </div>
+          <div class="fun-card reveal">
+            <span class="fun-emoji">&#127941;</span>
+            <p><strong>Medal Ceremony Officer</strong> at the Asian Para Games 2018 &mdash; on the field at an international event.</p>
+          </div>
+          <div class="fun-card reveal">
+            <span class="fun-emoji">&#128064;</span>
+            <p>Once a <strong>Sales Associate &amp; brand model for "League"</strong> at Jakarta Fair &mdash; versatility &amp; people skills.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section section-contact" id="contact">
+      <div class="container">
+        <div class="contact-inner reveal">
+          <span class="section-index center">08</span>
+          <h2 class="contact-title">Let's build something automated.</h2>
+          <p class="contact-lead">
+            Open to <strong>AI Automation Specialist</strong> roles and collaborations.
+            If you're solving real problems with AI &amp; automation, I'd love to talk.
+          </p>
+          <div class="contact-actions">
+            <a class="btn btn-primary" id="emailLink" href="#" rel="nofollow">Email Me</a>
+            <a class="btn btn-ghost" href="https://www.linkedin.com/in/julius-gunawan/" target="_blank" rel="noopener">LinkedIn</a>
+            <a class="btn btn-ghost" id="githubLink" href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+          </div>
+          <p class="contact-note">Based in Jakarta, Indonesia &middot; WITA (UTC+8)</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Julius Gunawan. Built with care &mdash; <span class="mono">Automating the boring, optimizing the important.</span></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
