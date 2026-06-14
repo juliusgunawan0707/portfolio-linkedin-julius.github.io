@@ -4,18 +4,26 @@
    ========================================================= */
 
 :root {
-  /* Navy base palette */
-  --navy-900: #060f1c;
-  --navy-850: #0a1628;
+  /* Navy base palette (deepened so accents pop) */
+  --navy-900: #050b16;
+  --navy-850: #0a1422;
   --navy-800: #0f1f33;
   --navy-700: #152a42;
   --navy-600: #1d3754;
 
-  /* Accents */
-  --cyan: #38e0d0;
+  /* Accents — vibrant multi-hue palette (no pink/magenta) */
+  --cyan: #2dd4bf;
   --cyan-bright: #5cf2e3;
   --blue: #4d9fff;
   --blue-soft: #6fb1ff;
+  --green: #34d399;
+  --green-soft: #6ee7b7;
+  --amber: #fbbf24;
+  --amber-soft: #fcd34d;
+  --violet: #a78bfa;
+  --violet-soft: #c4b5fd;
+  --coral: #fb7a68;
+  --coral-soft: #fda4a4;
 
   /* Text */
   --text: #e8eef6;
@@ -71,8 +79,8 @@ body {
 
 .bg-glow {
   border-radius: 50%;
-  filter: blur(80px);
-  opacity: 0.45;
+  filter: blur(40px);
+  opacity: 0.5;
   z-index: -3;
 }
 .bg-glow-1 {
@@ -83,7 +91,12 @@ body {
 .bg-glow-2 {
   width: 520px; height: 520px;
   bottom: -200px; right: -140px;
-  background: radial-gradient(circle, rgba(56,224,208,0.28), transparent 70%);
+  background: radial-gradient(circle, rgba(52,211,153,0.26), transparent 70%);
+}
+.bg-glow-3 {
+  width: 460px; height: 460px;
+  top: 42%; right: -120px;
+  background: radial-gradient(circle, rgba(167,139,250,0.20), transparent 70%);
 }
 
 body::before {
@@ -223,6 +236,7 @@ body::before {
   margin-bottom: 24px;
 }
 .hero-tagline .accent { color: var(--cyan); }
+.hero-tagline .accent-amber { color: var(--amber); }
 .hero-sub {
   font-size: clamp(1rem, 2.2vw, 1.15rem);
   color: var(--text-dim);
@@ -352,6 +366,15 @@ body::before {
   opacity: 0.8;
 }
 .section-index.center { display: block; text-align: center; margin-bottom: 8px; }
+/* Rotating section-index hues for a livelier, non-monotone feel */
+#about .section-index      { color: var(--blue); }
+#transition .section-index { color: var(--amber); }
+#experience .section-index { color: var(--green); }
+#projects .section-index   { color: var(--violet); }
+#skills .section-index     { color: var(--cyan); }
+#education .section-index   { color: var(--coral); }
+#funfacts .section-index   { color: var(--amber); }
+#contact .section-index    { color: var(--green); }
 .section-title {
   font-family: 'Space Grotesk', sans-serif;
   font-size: clamp(1.8rem, 5vw, 2.8rem);
@@ -387,7 +410,7 @@ body::before {
   padding: 18px 20px;
   transition: border-color 0.3s var(--ease), transform 0.3s var(--ease);
 }
-.about-stats li:hover { border-color: var(--cyan); transform: translateX(4px); }
+.about-stats li:hover { transform: translateX(4px); }
 .stat-num {
   display: block;
   font-family: 'Space Grotesk', sans-serif;
@@ -397,6 +420,15 @@ body::before {
   line-height: 1.1;
 }
 .stat-label { font-size: 0.88rem; color: var(--text-faint); }
+/* Per-card hues */
+.about-stats li:nth-child(1) .stat-num { color: var(--blue); }
+.about-stats li:nth-child(2) .stat-num { color: var(--green); }
+.about-stats li:nth-child(3) .stat-num { color: var(--amber); }
+.about-stats li:nth-child(4) .stat-num { color: var(--violet); }
+.about-stats li:nth-child(1):hover { border-color: var(--blue); }
+.about-stats li:nth-child(2):hover { border-color: var(--green); }
+.about-stats li:nth-child(3):hover { border-color: var(--amber); }
+.about-stats li:nth-child(4):hover { border-color: var(--violet); }
 
 /* ---------- Transition ---------- */
 .transition-grid {
@@ -427,6 +459,14 @@ body::before {
   font-size: 1.5rem;
   margin-bottom: 20px;
 }
+.transition-grid > .transition-card:nth-child(2) .transition-icon {
+  background: rgba(251,191,36,0.08); border-color: rgba(251,191,36,0.25); color: var(--amber);
+}
+.transition-grid > .transition-card:nth-child(3) .transition-icon {
+  background: rgba(167,139,250,0.08); border-color: rgba(167,139,250,0.25); color: var(--violet);
+}
+.transition-grid > .transition-card:nth-child(2):hover { border-color: rgba(251,191,36,0.35); }
+.transition-grid > .transition-card:nth-child(3):hover { border-color: rgba(167,139,250,0.35); }
 .transition-card h3 {
   font-family: 'Space Grotesk', sans-serif;
   font-size: 1.25rem;
@@ -622,6 +662,13 @@ body::before {
   left: 0;
   color: var(--cyan);
 }
+/* Group 2 — emerald · Group 3 — violet */
+.skills-grid > .skill-group:nth-child(2) h3 { color: var(--green); }
+.skills-grid > .skill-group:nth-child(2) ul li::before { color: var(--green); }
+.skills-grid > .skill-group:nth-child(2):hover { border-color: rgba(52,211,153,0.3); }
+.skills-grid > .skill-group:nth-child(3) h3 { color: var(--violet); }
+.skills-grid > .skill-group:nth-child(3) ul li::before { color: var(--violet); }
+.skills-grid > .skill-group:nth-child(3):hover { border-color: rgba(167,139,250,0.3); }
 
 /* ---------- Education ---------- */
 .edu-layout {
@@ -691,7 +738,15 @@ body::before {
   text-align: center;
   transition: transform 0.3s var(--ease), border-color 0.3s var(--ease);
 }
-.fun-card:hover { transform: translateY(-6px); border-color: var(--cyan); }
+.fun-card:hover { transform: translateY(-6px); }
+.fun-grid > .fun-card:nth-child(1) { border-top: 2px solid var(--green); }
+.fun-grid > .fun-card:nth-child(2) { border-top: 2px solid var(--amber); }
+.fun-grid > .fun-card:nth-child(3) { border-top: 2px solid var(--violet); }
+.fun-grid > .fun-card:nth-child(4) { border-top: 2px solid var(--coral); }
+.fun-grid > .fun-card:nth-child(1):hover { border-color: var(--green); }
+.fun-grid > .fun-card:nth-child(2):hover { border-color: var(--amber); }
+.fun-grid > .fun-card:nth-child(3):hover { border-color: var(--violet); }
+.fun-grid > .fun-card:nth-child(4):hover { border-color: var(--coral); }
 .fun-emoji { font-size: 2.2rem; display: block; margin-bottom: 14px; }
 .fun-card p { color: var(--text-dim); font-size: 0.92rem; }
 .fun-card strong { color: var(--text); }

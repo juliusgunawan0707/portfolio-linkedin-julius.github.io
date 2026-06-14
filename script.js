@@ -64,6 +64,7 @@
   var grid = document.querySelector('.bg-grid');
   var glow1 = document.querySelector('.bg-glow-1');
   var glow2 = document.querySelector('.bg-glow-2');
+  var glow3 = document.querySelector('.bg-glow-3');
 
   function onScrollParallax() {
     if (prefersReduced) return;
@@ -71,6 +72,7 @@
     if (grid) grid.style.transform = 'translateY(' + (y * 0.18) + 'px)';
     if (glow1) glow1.style.transform = 'translate(' + (y * 0.06) + 'px,' + (y * 0.12) + 'px)';
     if (glow2) glow2.style.transform = 'translate(' + (-y * 0.05) + 'px,' + (-y * 0.08) + 'px)';
+    if (glow3) glow3.style.transform = 'translate(' + (y * 0.04) + 'px,' + (-y * 0.06) + 'px)';
   }
 
   /* ---- rAF-throttled scroll handler ---- */
